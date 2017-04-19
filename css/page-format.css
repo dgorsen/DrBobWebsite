@@ -1,24 +1,134 @@
 /* CSS Document */
 
-.primary-color-container{
-    background-color: #E9ECE5
+.container{
+    width: 100%; 
 }
 
-.secondary-color-container{
-    background-color: #C0DFD9
+/* beige */
+.primary-color-container {
+    background-color: #E9ECE5;
+    color: #3B3A36;
 }
 
-.tertiary-color-container{
-    background-color: #3B3A36
+/* white */
+.secondary-color-container {
+    background-color: #FFFFFF; 
+    color: #3B3A36;
 }
 
-.quadernary-color-container{
-    background-color: #B3C2BF
+/* dark grey */
+.tertiary-color-container {
+    background-color: #3B3A36;
+    color: #E9ECE5;
 }
 
-.img-circle{
+/* grey blue */
+.quadernary-color-container {
+    background-color: #B3C2BF;
+    color: #3B3A36;
+}
+
+.img-circle {
     max-height: 400px;
     display: block;
     margin: 0 auto;
     
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.review{
+    float: none;
+    margin: 0 auto;
+}
+
+h3 { 
+    font-family: Verdana,Geneva,sans-serif; 
+    font-size: 250%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+p { 
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 150%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10%;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+.fancy {
+    line-height: 0;
+    text-align: center;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;  
+
+}
+.fancy.dark span:before,
+.fancy.dark span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #3B3A36;
+    border-top: 1px solid #3B3A36;
+    top: 0;
+    width: 600px;
+}
+
+.fancy.light span:before,
+.fancy.light span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #E9ECE5;
+    border-top: 1px solid #E9ECE5;
+    top: 0;
+    width: 600px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
 }
